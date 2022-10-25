@@ -15,7 +15,7 @@ func NewHandler(s Service) *Handler {
 }
 
 func (h *Handler) GetProducts(ctx *gin.Context) {
-	sellerID := ctx.Query("seller_id")
+	sellerID := ctx.Param("id")
 	if sellerID == "" {
 		ctx.JSON(400, gin.H{"error": "seller_id query param is required"})
 		return

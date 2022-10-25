@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/bootcamp-go/desafio-cierre-testing/cmd/router"
 	"github.com/gin-gonic/gin"
+	"github.com/tinchourteaga-ml/desafio-go-testing-martin-urteaga/cmd/router"
 )
 
 func main() {
